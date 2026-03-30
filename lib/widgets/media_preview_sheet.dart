@@ -77,7 +77,7 @@ class _MediaPreviewSheetState extends State<MediaPreviewSheet> {
             height: 4,
             margin: const EdgeInsets.only(bottom: 16),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.5),
+              color: Colors.white.withValues(alpha:0.5),
               borderRadius: BorderRadius.circular(2),
             ),
           ),
@@ -168,7 +168,7 @@ class _MediaPreviewSheetState extends State<MediaPreviewSheet> {
         boxShadow: isSelected
             ? [
                 BoxShadow(
-                  color: const Color(0xFF833AB4).withOpacity(0.3),
+                  color: const Color(0xFF833AB4).withValues(alpha: 0.3),
                   blurRadius: 8,
                   spreadRadius: 2,
                 ),
@@ -222,7 +222,7 @@ class _MediaPreviewSheetState extends State<MediaPreviewSheet> {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
         decoration: BoxDecoration(
-          color: Colors.black.withOpacity(0.75),
+          color: Colors.black.withValues(alpha: 0.75),
           borderRadius: BorderRadius.circular(4),
         ),
         child: Row(
@@ -258,14 +258,14 @@ class _MediaPreviewSheetState extends State<MediaPreviewSheet> {
         decoration: BoxDecoration(
           color: isSelected
               ? const Color(0xFF833AB4)
-              : Colors.white.withOpacity(0.9),
+              : Colors.white.withValues(alpha: 0.9),
           shape: BoxShape.circle,
           border: Border.all(
             color: isSelected ? Colors.white : Colors.grey[400]!,
             width: 2,
           ),
           boxShadow: [
-            BoxShadow(color: Colors.black.withOpacity(0.2), blurRadius: 4),
+            BoxShadow(color: Colors.black.withValues(alpha: 0.2), blurRadius: 4),
           ],
         ),
         child: isSelected
@@ -286,7 +286,7 @@ class _MediaPreviewSheetState extends State<MediaPreviewSheet> {
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Colors.transparent, Colors.black.withOpacity(0.7)],
+            colors: [Colors.transparent, Colors.black.withValues(alpha: 0.7)],
           ),
           borderRadius: const BorderRadius.only(
             bottomLeft: Radius.circular(10),
@@ -313,7 +313,7 @@ class _MediaPreviewSheetState extends State<MediaPreviewSheet> {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha:0.1),
             blurRadius: 10,
             offset: const Offset(0, -5),
           ),
